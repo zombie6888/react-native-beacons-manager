@@ -357,6 +357,7 @@ public class BeaconsAndroidModule extends ReactContextBaseJavaModule implements 
               b.putInt("minor", beacon.getId3().toInt());
           }
           b.putInt("rssi", beacon.getRssi());
+          b.putInt("txPower", beacon.getTxPower());
           if(beacon.getDistance() == Double.POSITIVE_INFINITY
                     || Double.isNaN(beacon.getDistance())
                     || beacon.getDistance() == Double.NaN
